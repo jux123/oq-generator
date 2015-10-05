@@ -1,0 +1,65 @@
+<h3>Arms & Armor</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th class="col-xs-8">Close Combat Weapon</th>
+        <th class="col-xs-3">Damage</th>
+        <th class="col-xs-1">Size</th>
+    </tr>
+    </thead>
+    <tr>
+        <td>Unarmed</td>
+        <td>1D3</td>
+        <td>-</td>
+    </tr>
+    <tr ng-repeat="meleeWeapon in character.meleeWeapons">
+        <td>{{meleeWeapon.name}} (enc:{{meleeWeapon.enc}})</td>
+        <td>{{meleeWeapon.damage}}</td>
+        <td>{{meleeWeapon.size}}</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th class="col-xs-6">Ranged Weapon</th>
+        <th class="col-xs-2">Damage</th>
+        <th class="col-xs-2">Range</th>
+        <th class="col-xs-2">Rate</th>
+    </tr>
+    </thead>
+    <tr ng-repeat="rangedWeapon in character.rangedWeapons">
+        <td>{{rangedWeapon.name}} (enc:{{rangedWeapon.enc}})</td>
+        <td>{{rangedWeapon.damage}}</td>
+        <td>{{rangedWeapon.range}}</td>
+        <td>{{rangedWeapon.rate}}</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th class="col-xs-10">Armor</th>
+        <th class="col-xs-2">AP</th>
+    </tr>
+    </thead>
+    <tr ng-repeat="a in character.armor">
+        <td>{{a.name}}</td>
+        <td>{{a.ap}}</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+    </tr>
+</table>

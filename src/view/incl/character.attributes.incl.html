@@ -1,0 +1,49 @@
+<h3>Attributes</h3>
+<div class="row">
+    <div class="col-xs-6">
+        <div class="row">
+            <div class="col-xs-8"><label>Damage Modifier</label></div>
+            <div class="col-xs-4">{{character.attributes.damageModifier}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8"><label>Movement Rate</label></div>
+            <div class="col-xs-4">{{character.attributes.movementRate}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8"><label>Total Hit Points</label></div>
+            <div class="col-xs-4">{{character.attributes.hitPoints}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8"><label>Major Wound Level</label></div>
+            <div class="col-xs-4">{{character.attributes.majorWoundLevel}}</div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+        <div class="form-group col-xs-12">
+            <label for="fatigue">Fatique</label>
+            <input type="text" class="form-control" id="fatigue">
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group col-xs-12">
+            <label for="heroPoints">Hero Points</label>
+            <input type="text" class="form-control" id="heroPoints">
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group col-xs-12">
+            <label for="magicPoints">Magic Points</label>
+            <input type="text" class="form-control" id="magicPoints" ng-model="character.attributes.magicPoints">
+        </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="form-group">
+        <label for="hitPoints" class="col-xs-8 control-label">Current Hit Points</label>
+        <div class="col-xs-12">
+            <textarea class="form-control" rows="3" id="hitPoints"></textarea>
+        </div>
+    </div>
+</div>

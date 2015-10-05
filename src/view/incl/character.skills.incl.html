@@ -1,0 +1,50 @@
+<h3>Skills</h3>
+<table class="table">
+    <caption>Resistances</caption>
+    <tr ng-repeat="skill in character.resistanceSkills" ng-switch on="$index % 2">
+        <td class="col-md-5" ng-switch-when="0">{{character.resistanceSkills[$index].name}} <small>{{character.resistanceSkills[$index].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.resistanceSkills[$index].getTotalValue()}}</td>
+        <td class="col-md-5" ng-switch-when="0">{{character.resistanceSkills[$index + 1].name}} <small>{{character.resistanceSkills[$index + 1].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.resistanceSkills[$index + 1].getTotalValue()}}</td>
+    </tr>
+</table>
+
+<table class="table">
+    <caption>Combat</caption>
+    <tr ng-repeat="skill in character.combatSkills" ng-switch on="$index % 2">
+        <td class="col-md-5" ng-switch-when="0">{{character.combatSkills[$index].name}} <small>{{character.combatSkills[$index].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.combatSkills[$index].getTotalValue()}}</td>
+        <td class="col-md-5" ng-switch-when="0">{{character.combatSkills[$index + 1].name}} <small>{{character.combatSkills[$index + 1].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.combatSkills[$index + 1].getTotalValue()}}</td>
+    </tr>
+</table>
+
+<table class="table">
+    <caption>Knowledge</caption>
+    <tr ng-repeat="skill in character.knowledgeSkills" ng-switch on="$index % 2">
+        <td class="col-md-5" ng-switch-when="0">{{character.knowledgeSkills[$index].name}} <small>{{character.knowledgeSkills[$index].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.knowledgeSkills[$index].getTotalValue()}}</td>
+        <td class="col-md-5" ng-switch-when="0">{{character.knowledgeSkills[$index + 1].name}} <small>{{character.knowledgeSkills[$index + 1].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.knowledgeSkills[$index + 1].getTotalValue()}}</td>
+    </tr>
+</table>
+
+<table class="table">
+    <caption>Practical</caption>
+    <tr ng-repeat="skill in character.practicalSkills" ng-switch on="$index % 2">
+        <td class="col-md-5" ng-switch-when="0">{{character.practicalSkills[$index].name}} <small>{{character.practicalSkills[$index].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.practicalSkills[$index].getTotalValue()}}</td>
+        <td class="col-md-5" ng-switch-when="0">{{character.practicalSkills[$index + 1].name}} <small>{{character.practicalSkills[$index + 1].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.practicalSkills[$index + 1].getTotalValue()}}</td>
+    </tr>
+</table>
+
+<table class="table">
+    <caption>Magic</caption>
+    <tr ng-repeat="skill in character.magicSkills" ng-switch on="$index % 2">
+        <td class="col-md-5" ng-switch-when="0">{{character.magicSkills[$index].name}} <small>{{character.magicSkills[$index].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.magicSkills[$index].getTotalValue()}}</td>
+        <td class="col-md-5" ng-switch-when="0">{{character.magicSkills[$index + 1].name}} <small>{{character.magicSkills[$index + 1].getStats()}}</small></td>
+        <td class="col-md-1" ng-switch-when="0">{{character.magicSkills[$index + 1].getTotalValue()}}</td>
+    </tr>
+</table>

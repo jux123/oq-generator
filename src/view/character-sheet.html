@@ -1,0 +1,45 @@
+<div class="hidden-print">
+
+    <h1>OpenQuest Character Generator</h1>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>
+                Bonus access to clergy is granted, when character ends up with below average STR, DEX and POW.
+            </p>
+            <p>
+                Bonus access to sorcery is granted, when character ends up with below average STR, DEX and CON, but has INT at least 12.
+            </p>
+            <p>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="reRoll" value="">
+                    Reroll every "1" for attributes?
+                </label>
+            </div>
+            </p>
+            <br>
+            <div class="row">
+                <div class="col-xs-11"><button type="button" class="btn btn-primary" ng-click="generate()">Generate</button></div>
+                <div class="co-xs-1 about"><small>v.1.0 by jux</small></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row" ng-show="character">
+    <div class="col-xs-6">
+        <div ng-include="'view/incl/character.name.incl.html'"></div>
+        <div ng-include="'view/incl/character.characteristics.incl.html'"></div>
+        <div ng-include="'view/incl/character.attributes.incl.html'"></div>
+        <div ng-include="'view/incl/character.weapons.incl.html'"></div>
+        <div ng-show="character.cult" ng-include="'view/incl/character.cult.incl.html'"></div>
+        <div ng-show="character.sorcery" ng-include="'view/incl/character.sorcery.incl.html'"></div>
+    </div>
+
+    <div class="col-xs-6">
+        <div ng-include="'view/incl/character.skills.incl.html'"></div>
+        <div ng-include="'view/incl/character.spells.incl.html'"></div>
+    </div>
+</div>

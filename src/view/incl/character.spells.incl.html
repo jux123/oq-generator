@@ -1,0 +1,24 @@
+<h3>Spells</h3>
+<table class="table">
+    <caption>Battle Magic</caption>
+    <tr ng-repeat="spell in character.battleMagicSpells" ng-switch on="$index % 2">
+        <td class="col-md-5" ng-switch-when="0">{{character.battleMagicSpells[$index].name}} [{{character.battleMagicSpells[$index].magnitude}}]</td>
+        <td class="col-md-5" ng-switch-when="0"><span ng-show="character.battleMagicSpells[$index + 1]">{{character.battleMagicSpells[$index + 1].name}} [{{character.battleMagicSpells[$index + 1].magnitude}}]</span></td>
+    </tr>
+</table>
+
+<table class="table" ng-show="character.cult">
+    <caption>Divine Magic</caption>
+    <tr ng-repeat="spell in character.divineSpells" ng-switch on="$index % 2">
+        <td class="col-md-5" ng-switch-when="0">{{character.divineSpells[$index].name}} [{{character.divineSpells[$index].magnitude}}]</td>
+        <td class="col-md-5" ng-switch-when="0"><span ng-show="character.battleMagicSpells[$index + 1]">{{character.divineSpells[$index + 1].name}} [{{character.divineSpells[$index + 1].magnitude}}]</span></td>
+    </tr>
+</table>
+
+<table class="table" ng-show="character.sorcery">
+    <caption>Sorcery</caption>
+    <tr ng-repeat="spell in character.sorcerySpells" ng-switch on="$index % 2">
+        <td class="col-md-5" ng-switch-when="0">{{character.sorcerySpells[$index].name}}</td>
+        <td class="col-md-5" ng-switch-when="0"><span ng-show="character.sorcerySpells[$index + 1]">{{character.sorcerySpells[$index + 1].name}}</span></td>
+    </tr>
+</table>

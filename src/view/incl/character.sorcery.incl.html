@@ -1,0 +1,33 @@
+<h3>School of Sorcery</h3>
+<div class="row">
+    <div class="col-xs-12">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="sorceryName" class="col-xs-3 control-label">Guild Name</label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" id="sorceryName">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-3 control-label">Sorcery taught</label>
+                <div class="col-xs-9">
+                    <div class="panel panel-default">
+                        <div class="panel-body">{{character.getSorcerySpells()}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="benefitsDuties" class="col-xs-3 control-label">Benefits and Duties</label>
+                <div class="col-xs-9">
+                    <textarea class="form-control" rows="3" id="benefitsDuties"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sorceryRank" class="col-xs-3 control-label">Rank of Sorcery</label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" id="sorceryRank" value="Apprentice">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
