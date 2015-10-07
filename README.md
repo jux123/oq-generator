@@ -1,3 +1,3 @@
 # oq-generator
 
-OpenQuest RPG character generator
+OpenQuest RPG random character generator
