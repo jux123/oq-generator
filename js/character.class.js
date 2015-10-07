@@ -212,7 +212,7 @@ Character.prototype = {
             this.magicSkills.push(new Skill("Sorcery", ["INT", "40"], this.characteristics.int + 40));
         }
         if (this.isDivineMagicPresent()) {
-            this.magicSkills.push(new Skill("Religion", ["INT", "10"], this.characteristics.int + 40));
+            this.magicSkills.push(new Skill("Religion", ["INT", "40"], this.characteristics.int + 40));
         }
     },
 
